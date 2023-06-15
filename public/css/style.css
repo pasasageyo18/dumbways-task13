@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  background-color: white;
+  padding: 20px 36px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 24px;
+}
+
+a {
+  color: black;
+}
+
+.active {
+  font-weight: bolder;
+}
+
+.nav-left {
+  flex: 50%;
+  margin-left: 48px;
+}
+
+.nav-right {
+  flex: 50%;
+  text-align: end;
+}
+
+.nav-right a {
+  background-color: black;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.container-left {
+  flex: 50%;
+  flex-direction: column;
+}
+
+.container-right {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#barsmenu {
+  display: none;
+}
+
+.hamburger-nav-container {
+  font-size: 23px;
+  list-style-type: none;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  background-color: #c7c7c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hamburger-nav-container .hamburger-active {
+  text-decoration: none;
+  color: black;
+  background-color: #c7c7c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.button-contact-hamburger {
+  display: flex;
+  justify-content: center;
+  background-color: #c7c7c7;
+  padding: 10px;
+}
+
+.button-contact-hamburger a {
+  width: 25%;
+  background-color: black;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.ultra-img {
+  height: 80%;
+  background-image: url(../assets/ultraman.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-cv {
+  margin-bottom: 20px;
+}
+
+.button-contact {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  padding: 12px 36px;
+  border-color: transparent;
+  margin-bottom: 20px;
+}
+
+.download-button {
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  border-color: transparent;
+}
+
+.profile-container {
+  width: 70%;
+  height: 90%;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.sosmed-container {
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container-left {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-right {
+    flex: 100%;
+    margin-left: 0;
+  }
+
+  .ultra-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+    background-image: url(../assets/ultraman.jpg);
+    height: 300px;
+  }
+
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .sosmed-container {
+    text-align: center;
+  }
+}

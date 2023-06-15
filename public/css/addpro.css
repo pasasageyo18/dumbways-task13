@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(238, 240, 243);
+}
+
+#addproject > div {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+form input,
+textarea {
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+}

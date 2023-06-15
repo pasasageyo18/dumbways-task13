@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <title>Blog Page</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <img src="assets/logo.png" alt="" width="36px" />
+      </div>
+      <div class="nav-left">
+        <ul>
+          <li class="item-collapse">
+            <a href="indexnew.html" class="active">Home</a>
+          </li>
+          <li class="item-collapse"><a href="blog.html">My Project</a></li>
+        </ul>
+      </div>
+      <div class="nav-right item-collapse">
+        <a href="contactnew.html">Contact Me</a>
+      </div>
+      <div class="nav-right" id="barsmenu">
+        <button
+          style="background-color: transparent; border: none; cursor: pointer"
+          onclick="openHamburger()"
+        >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="indexnew.html" class="hamburger-active">Home</a>
+      <a href="blog.html">My Project</a>
+      <div class="button-contact-hamburger">
+        <a href="contactnew.html">Contact Me</a>
+      </div>
+    </div>
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form action="" onsubmit="addBlog(event)">
+            <h1>ADD MY PROJECT</h1>
+            <div>
+              <label for="input-blog-title"> Project Name </label>
+              <input type="text" name="" id="input-blog-title" />
+            </div>
+            <div class="input-date-project">
+              <div class="input-date-start">
+                <label for="input-blog-start-date"> Start Date </label>
+                <input type="date" name="" id="input-blog-start-date" />
+              </div>
+              <div class="input-date-end">
+                <label for="input-end-date"> End Date </label>
+                <input type="date" name="" id="input-end-date" />
+              </div>
+            </div>
+            <div class="input-tech-group">
+              <label for="" class="title">Technologies</label>
+              <div class="input-check-tech">
+                <div class="check">
+                  <input
+                    type="checkbox"
+                    id="tech1"
+                    value="Node JS"
+                    name="techStack"
+                  />
+                  <label for="tech1">Node JS</label>
+                </div>
+                <div class="check">
+                  <input
+                    type="checkbox"
+                    id="tech2"
+                    value="Javascript"
+                    name="techStack"
+                  />
+                  <label for="tech2">Javascript</label>
+                </div>
+                <div class="check">
+                  <input
+                    type="checkbox"
+                    id="tech3"
+                    value="Stack IO"
+                    name="techStack"
+                  />
+                  <label for="tech3">Stack IO</label>
+                </div>
+                <div class="check">
+                  <input
+                    type="checkbox"
+                    id="tech4"
+                    value="React JS"
+                    name="techStack"
+                  />
+                  <label for="tech4">React JS</label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label for="input-blog-content">Content</label>
+              <textarea
+                name=""
+                id="input-blog-content"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div>
+              <label for="">Upload Image</label>
+              <div class="input-label-image-group">
+                <label for="input-blog-image"
+                  ><p>Attach files</p>
+                  <img src="assets/icons8-attachment-24.png" alt=""
+                /></label>
+                <input type="file" name="" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group-submit">
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="blog-list" id="contents">
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="assets/blog-img.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div>
+              <h3>
+                <a href="blog-detail.html" target="_blank"
+                  >Pasar Coding alsklakdlak</a
+                >
+              </h3>
+              <div class="detail-blog-contain">
+                21 Juli 2021 - 1 September 2022
+              </div>
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC, making it over 2000 years old. Richard McClintock, a
+                Latin professor at Hampden-Sydney College in Virginia.
+              </p>
+            </div>
+            <div class="icon-group">
+              <img src="assets/icons8-react-30.png" alt="" width="30px" /><img
+                src="assets/icons8-javascript-50.png"
+                alt=""
+                width="30px"
+              />
+              <img src="assets/icons8-node-js-32.png" alt="" width="30px" />
+            </div>
+            <div class="btn-group">
+              <button class="btn">Edit Post</button>
+              <button class="btn">Delete Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/blog.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

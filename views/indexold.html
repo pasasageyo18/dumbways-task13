@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio Website</title>
+  </head>
+  <body style="background-color: rgb(238, 240, 243)">
+    <nav>
+      <div>
+        <img src="assets/logo.png" alt="" width="36px" />
+      </div>
+      <div class="nav-left">
+        <ul>
+          <li class="item-collapse">
+            <a href="index.html" class="active">Home</a>
+          </li>
+          <li class="item-collapse"><a href="blog.html">My Project</a></li>
+        </ul>
+      </div>
+      <div class="nav-right item-collapse">
+        <a href="contactnew.html">Contact Me</a>
+      </div>
+      <div class="nav-right" id="barsmenu">
+        <button
+          style="background-color: transparent; border: none; cursor: pointer"
+          onclick="openHamburger()"
+        >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="indexnew.html" class="hamburger-active">Home</a>
+      <a href="blog.html">My Project</a>
+      <div class="button-contact-hamburger">
+        <a href="contactnew.html">Contact Me</a>
+      </div>
+    </div>
+    <main>
+      <div
+        class="container"
+        style="
+          margin: 36px auto;
+          padding: 24px;
+          width: 80%;
+          border-style: solid;
+          border-color: transparent;
+          border-radius: 10px;
+          background-color: white;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          display: flex;
+        "
+      >
+        <div class="container-left">
+          <h1>Hi Welcome to my hut</h1>
+          <br />
+          <p style="text-align: justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Sed ut
+            perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+            aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+            dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+            quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+            aliquid ex ea commodi consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+            pariatur?
+          </p>
+          <br />
+
+          <div class="button-group">
+            <div>
+              <button class="button-contact">contact</button>
+            </div>
+            <div class="download-cv">
+              <button class="download-button">
+                download CV
+                <img
+                  src="assets/icons8-download-48.png"
+                  alt=""
+                  width="20px"
+                  height="20px"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="sosmed-container">
+            <img
+              src="assets/icons8-linkedin-30.png"
+              alt=""
+              width="30px"
+              height="30px"
+              style="margin-right: 24px"
+            />
+            <img
+              src="assets/icons8-instagram-50.png"
+              alt=""
+              width="30px"
+              height="30px"
+              style="margin-right: 24px"
+            />
+            <img
+              src="assets/icons8-facebook-50.png"
+              alt=""
+              width="30px"
+              height="30px"
+              style="margin-right: 24px"
+            />
+            <img
+              src="assets/icons8-twitter-circled-50.png"
+              alt=""
+              width="30px"
+              height="30px"
+              style="margin-right: 24px"
+            />
+          </div>
+          <br />
+        </div>
+        <div class="container-right">
+          <div class="profile-container">
+            <div class="ultra-img"></div>
+            <div style="padding: 24px 0; text-align: center" class="about">
+              <h3>Bajigur</h3>
+              <p>Frontend Engineer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
